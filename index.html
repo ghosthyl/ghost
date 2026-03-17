@@ -24,18 +24,19 @@
 
 <script type="module">
     // Импортируем модули Firebase
-    import { initializeApp } from "firebase/app";
-    import { getAnalytics } from "firebase/analytics";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+
     // ТВОИ КЛЮЧИ СО СКРИНШОТА
-const firebaseConfig = {
-    apiKey: "AIzaSyBnJ-xxCJ1meDQTqM8SnHw5G4lLAAUc1ZQ",
-    authDomain: "ghosthyl-c2099.firebaseapp.com",
-    projectId: "ghosthyl-c2099",
-    storageBucket: "ghosthyl-c2099.firebasestorage.app",
-    messagingSenderId: "65870767955",
-    appId: "1:65870767955:web:e74013ba7cd9f2fc9ea3a6",
-    measurementId: "G-3QD9Q9PDWH"
-    };
+    const firebaseConfig = {
+  apiKey: "AIzaSyBnJ-xxCJ1meDQTqM8SnHw5G4lLAAUc1ZQ",
+  authDomain: "ghosthyl-c2099.firebaseapp.com",
+  projectId: "ghosthyl-c2099",
+  storageBucket: "ghosthyl-c2099.firebasestorage.app",
+  messagingSenderId: "65870767955",
+  appId: "1:65870767955:web:e74013ba7cd9f2fc9ea3a6",
+  measurementId: "G-3QD9Q9PDWH"
+};
 
     // Инициализация
     const app = initializeApp(firebaseConfig);
@@ -63,5 +64,6 @@ const firebaseConfig = {
         }
     });
 </script>
+
 </body>
 </html>
