@@ -24,11 +24,10 @@
 
 <script type="module">
     // Импортируем модули Firebase
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
-    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
-
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
     // ТВОИ КЛЮЧИ СО СКРИНШОТА
-    const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBnJ-xxCJ1meDQTqM8SnHw5G4lLAAUc1ZQ",
     authDomain: "ghosthyl-c2099.firebaseapp.com",
     projectId: "ghosthyl-c2099",
